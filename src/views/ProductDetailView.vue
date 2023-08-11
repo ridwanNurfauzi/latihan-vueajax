@@ -1,28 +1,30 @@
 <template>
-    <div>
-        <div class="lg:container sm:grid sm:grid-cols-2 sm:gap-2">
-            <div class="p-[40px] flex">
-                <img class="shadow my-auto" :src="product.image" :alt="product.title">
-            </div>
-            <div class="p-4 flex">
-                <div class="my-auto">
-                    <h2 class="text-2xl font-semibold">{{ product.title }}</h2>
-                    <p class="text-sm text-gray-500">{{ product.category }}</p>
-                    <div class="my-10" v-if="product.price != undefined">
-                        <b class="text-4xl font-bold font-mono">{{ '$' + product.price }}</b>
-                    </div>
-                    <div v-if="product.rating != undefined" class="text-xl group my-4">
-                        <span
-                            class="font-bold text-blue-700 bg-blue-300 rounded-lg text-base mx-3 px-2 group-hover:bg-opacity-75">{{
-                                product.rating.rate }}</span>
-                        <span class="text-yellow-400 hover:scale-105 transition-all group-hover:text-yellow-300"
-                            v-html="rateToStar(product.rating.rate)"></span>
-                        <span
-                            class="font-bold text-blue-700 bg-blue-300 rounded-lg text-base mx-3 px-2 group-hover:bg-opacity-75"><i
-                                class="bi bi-people"></i> {{ product.rating.count }}</span>
-                    </div>
-                    <div>
-                        <p>{{ product.description }}</p>
+    <div class="flex">
+        <div class="mx-4 xl:max-w-7xl xl:mx-auto">
+            <div class="lg:container sm:grid sm:grid-cols-2 sm:gap-2">
+                <div class="p-[40px] flex">
+                    <img class="shadow my-auto" :src="product.image" :alt="product.title">
+                </div>
+                <div class="p-4 flex">
+                    <div class="my-auto">
+                        <h2 class="text-2xl font-semibold">{{ product.title }}</h2>
+                        <p class="text-sm text-gray-500">{{ product.category }}</p>
+                        <div class="my-10" v-if="product.price != undefined">
+                            <b class="text-4xl font-bold font-mono">{{ '$' + product.price }}</b>
+                        </div>
+                        <div v-if="product.rating != undefined" class="text-xl group my-4">
+                            <span
+                                class="font-bold text-blue-700 bg-blue-300 rounded-lg text-base mx-3 px-2 group-hover:bg-opacity-75">{{
+                                    product.rating.rate }}</span>
+                            <span class="text-yellow-400 hover:scale-105 transition-all group-hover:text-yellow-300"
+                                v-html="rateToStar(product.rating.rate)"></span>
+                            <span
+                                class="font-bold text-blue-700 bg-blue-300 rounded-lg text-base mx-3 px-2 group-hover:bg-opacity-75"><i
+                                    class="bi bi-people"></i> {{ product.rating.count }}</span>
+                        </div>
+                        <div>
+                            <p>{{ product.description }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
