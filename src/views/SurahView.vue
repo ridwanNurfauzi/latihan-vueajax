@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full">
+    <div class="flex w-full px-5">
         <div class="mx-4 xl:max-w-7xl xl:mx-auto w-full">
             <h2 class="text-center text-2xl my-4 font-semibold">
                 Halaman Surah
