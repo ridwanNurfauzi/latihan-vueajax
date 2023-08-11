@@ -36,6 +36,9 @@
                     <li>
                         <RouterLink to="/category" :class="setActivedNavClass(rl._2)">Category</RouterLink>
                     </li>
+                    <li>
+                        <RouterLink to="/surah" :class="setActivedNavClass(rl._3)">surah</RouterLink>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -67,12 +70,16 @@ export default {
         const rl = ref({
             _1: false,
             _2: false,
+            _3: false,
         });
         if (props.idMenu == 1) {
             rl.value._1 = true;
         }
         if (props.idMenu == 2) {
             rl.value._2 = true;
+        }
+        if (props.idMenu == 3) {
+            rl.value._3 = true;
         }
 
         return {

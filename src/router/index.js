@@ -32,6 +32,17 @@ const router = createRouter({
       component: () => import('@/views/ProductsView.vue')
     },
     {
+      path: '/surah',
+      name: 'surah',
+      component: () => import('@/views/SurahView.vue')
+    },
+    {
+      path: '/surah/:number',
+      name: 'singleSurah',
+      component: () => import('@/views/SingleSurahView.vue'),
+      props: true
+    },
+    {
       path: '/product/:id_produk',
       name: 'productDetail',
       component: () => import('@/views/ProductDetailView.vue'),
