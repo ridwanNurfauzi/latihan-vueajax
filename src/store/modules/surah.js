@@ -29,15 +29,6 @@ export default {
                 console.log(error);
             }
         },
-        // async fetchProductById({ commit }, productId) {
-        //     try {
-        //         const dataProduct = await axios.get(`https://fakestoreapi.com/products/${productId}`)
-        //         commit('SET_PRODUCT_BY_ID', dataProduct.data)
-        //     } catch (error) {
-        //         alert("Ada error");
-        //         console.log(error);
-        //     }
-        // }
     },
     mutations: {
         SET_SURAHS(state, surahs) {
@@ -46,8 +37,5 @@ export default {
         SET_SINGLESURAH(state, surah) {
             state.surah = surah.data
         },
-        // SET_PRODUCT_BY_ID(state, products) {
-        //     state.product = products
-        // }
     }
 }

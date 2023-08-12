@@ -37,7 +37,7 @@
                         <RouterLink to="/category" :class="setActivedNavClass(rl._2)">Category</RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="/surah" :class="setActivedNavClass(rl._3)">surah</RouterLink>
+                        <RouterLink to="/surah" :class="setActivedNavClass(rl._3)">Surah</RouterLink>
                     </li>
                 </ul>
             </div>

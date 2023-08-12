@@ -3,7 +3,6 @@
         <div class="mx-4 xl:max-w-7xl xl:mx-auto">
             <h2 class="text-center text-2xl my-4 font-semibold">
                 {{ category_name }}
-                <!-- {{ getProduct }} -->
             </h2>
             <div class="mx-6 container">
                 <p>Product total : {{ getProduct.length }}</p>

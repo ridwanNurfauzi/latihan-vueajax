@@ -7,7 +7,7 @@
             <div class="flex flex-col w-full">
                 <div v-for="dataSurahs in getSurahs">
                     <RouterLink :to="'/surah/'+ dataSurahs.number">
-                        <div class="px-3 py-5 rounded-xl border hover:shadow-lg flex my-4">
+                        <div class="px-3 py-5 rounded-xl border hover:shadow-lg flex flex-wrap my-4">
                             <div class="mx-3"><b>{{ dataSurahs.number }}</b></div>
                             <div>{{ dataSurahs.name }}</div>
                             <div>: {{ dataSurahs.translation }}</div>
