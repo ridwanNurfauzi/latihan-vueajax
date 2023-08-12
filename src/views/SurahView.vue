@@ -5,7 +5,7 @@
                 Halaman Surah
             </h2>
             <div class="flex flex-col w-full">
-                <div v-for="dataSurahs in getSurahs">
+                <div v-for="dataSurahs in getSurahs" :key="dataSurahs.number">
                     <RouterLink :to="'/surah/'+ dataSurahs.number">
                         <div class="px-3 py-5 rounded-xl border hover:shadow-lg flex flex-wrap my-4">
                             <div class="mx-3"><b>{{ dataSurahs.number }}</b></div>
